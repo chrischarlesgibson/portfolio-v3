@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Avatar, Divider, Typography } from "@mui/material";
 
-export default function ImgMediaCard() {
+export default function Resume() {
   return (
     <div className="aboutMe-container">
       <Avatar
@@ -10,9 +10,7 @@ export default function ImgMediaCard() {
         sx={{ width: 56, height: 56 }}
       />
       <Divider />
-      <Typography variant="body1">
-        This is a short paragraph of text that appears after the divider.
-      </Typography>
+      <Typography variant="body1">resume</Typography>
     </div>
   );
 }

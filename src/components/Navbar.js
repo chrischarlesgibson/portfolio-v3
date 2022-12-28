@@ -5,7 +5,7 @@ import * as React from "react";
 // import IconButton from "@mui/material/IconButton";
 // import Typography from "@mui/material/Typography";
 // import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 // import Container from "@mui/material/Container";
 
 // import Button from "@mui/material/Button";
@@ -19,16 +19,14 @@ import {
   Toolbar,
   Typography,
   Menu,
-  MenuIcon,
   Container,
   Button,
   MenuItem,
-  AdbIcon,
   IconButton,
 } from "@mui/material";
 const pages = ["About Me", "Projects", "Resume", "Contact Me"];
 
-function ResponsiveAppBar() {
+function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -41,7 +39,6 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -96,7 +93,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -131,4 +128,4 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Navbar;

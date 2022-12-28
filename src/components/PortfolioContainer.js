@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./Navbar";
 
-import AboutMe from "./pages/AboutMe";
-import Portfolio from "./pages/portfolio.js";
-import ContactMe from "./pages/ContactMe";
-import Resume from "./pages/Resume";
+import AboutMe from "../pages/AboutMe";
+import Projects from "../pages/Projects";
+import ContactMe from "../pages/ContactMe";
+import Resume from "../pages/Resume";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
@@ -21,7 +21,7 @@ export default function PortfolioContainer() {
       return <ContactMe />;
     }
 
-    return <Portfolio />;
+    return <Projects />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
