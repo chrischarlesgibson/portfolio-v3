@@ -1,130 +1,77 @@
-import * as React from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import IconButton from "@mui/material/IconButton";
-// import Typography from "@mui/material/Typography";
-// import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-// import Container from "@mui/material/Container";
-
-// import Button from "@mui/material/Button";
-
-// import MenuItem from "@mui/material/MenuItem";
-// import AdbIcon from "@mui/icons-material/Adb";
-
+import React from "react";
+import NavBurger from "../components/NavBurger";
+import { motion } from "framer-motion";
 import {
   AppBar,
-  Box,
   Toolbar,
+  CssBaseline,
   Typography,
-  Menu,
-  Container,
-  Button,
-  MenuItem,
-  IconButton,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
-const pages = ["About Me", "Projects", "Resume", "Contact Me"];
+import { Link } from "react-router-dom";
+import "../styles/navbar.css";
+
+// const useStyles = makeStyles((theme) => ({
+//   navlinks: {
+//     marginLeft: theme.spacing(5),
+//     display: "flex",
+//   },
+//   logo: {
+//     flexGrow: "1",
+//     cursor: "pointer",
+//   },
+//   link: {
+//     textDecoration: "none",
+//     color: "white",
+//     fontSize: "20px",
+//     marginLeft: theme.spacing(20),
+//     "&:hover": {
+//       color: "yellow",
+//       borderBottom: "1px solid white",
+//     },
+//   },
+// }));
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
+      <CssBaseline />
+      <Toolbar>
+        <Typography variant="h4" className="logo">
+          Navbar
+        </Typography>
+        {isMobile ? (
+          <NavBurger />
+        ) : (
+          <div className="navlinks">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/About" className="link">
+                About
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/Projects" className="link">
+                Projects
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/Resume" className="link">
+                Resume
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/Contact" className="link">
+                Contact
+              </Link>
+            </motion.div>
+          </div>
+        )}
+      </Toolbar>
     </AppBar>
   );
 }

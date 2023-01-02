@@ -4,7 +4,7 @@ import "../styles/footer.css";
 // import Grid from "@material-ui/core/Grid";
 // import Box from "@material-ui/core/Box";
 // import Link from "@material-ui/core/Link";
-import { Container, Grid, Box, Link } from "@material-ui/core";
+import { Container, Grid, Box, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <Box>
         <Container maxWidth="lg">
           <Grid container spaceing={5}>

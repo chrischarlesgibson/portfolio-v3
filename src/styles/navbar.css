@@ -1,0 +1,21 @@
+.logo {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.navlinks {
+  margin-left: 20px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.linkClassName:hover {
+  color: yellow;
+  border-bottom: 1px solid white;
+}

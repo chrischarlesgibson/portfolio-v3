@@ -41,7 +41,7 @@ import { useForm } from "react-hook-form";
 //   );
 // }
 
-export default function ContactMe() {
+export default function Contact() {
   const form = useRef();
 
   const {
