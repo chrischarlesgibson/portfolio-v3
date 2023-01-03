@@ -5,41 +5,18 @@ import emailjs from "@emailjs/browser";
 // import Footer from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  Grid,
+  TextField,
+  Button,
+  Card,
+  CardContent,
+  Typography,
+} from "@mui/material";
 // import "../styles/contactMe.css";
 // import { init } from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 // // init("REACT_APP_EMAILJS_USER_ID");
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     '& > *': {
-//       margin: theme.spacing(1),
-//       width: '25ch',
-//     },
-//   },
-// }));
-
-// export default function ContactMe() {
-//     const classes = useStyles();
-//     const form = useRef();
-
-//   return (
-//     <form className={classes.root} noValidate autoComplete="off">
-//       <TextField id="name" label="Name" variant="outlined" />
-//       <TextField id="email" label="Email" variant="outlined" />
-//       <TextField id="subject" label="Subject" variant="outlined" />
-//       <TextField
-//         id="message"
-//         label="Message"
-//         variant="outlined"
-//         multiline
-//         rows={4}
-//       />
-//       <Button variant="contained" color="primary">
-//         Submit
-//       </Button>
-//     </form>
-//   );
-// }
 
 export default function Contact() {
   const form = useRef();
@@ -102,99 +79,137 @@ export default function Contact() {
       );
   };
 
+  //
+
   return (
-    <form
-      ref={form}
-      onSubmit={handleSubmit(handleEmail, handleError)}
-      id="contact-form-container"
-    >
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">From</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <p className="control is-expanded has-icons-left">
-              <input
-                name="name"
-                className="input "
-                type="text"
-                placeholder="Your Name"
-                {...register("name", validations.name)}
-              />
-              <span className="help is-danger">
-                {errors?.name && errors.name.message}
-              </span>
-              <span className="icon is-small is-left">
-                <FontAwesomeIcon icon={faUser} />
-              </span>
-            </p>
-          </div>
-          <div className="field">
-            <p className="control is-expanded has-icons-left has-icons-right">
-              <input
-                name="email"
-                className="input "
-                type="email"
-                placeholder="Email"
-                {...register("email", validations.email)}
-              />
-              <span className="help is-danger">
-                {errors?.email && errors.email.message}
-              </span>
-              <span className="icon is-small is-left">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </span>
-              <span className="icon is-small is-right">
-                <FontAwesomeIcon icon={faCheck} />
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Message</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <div className="control">
-              <textarea
-                name="message"
-                className="textarea"
-                placeholder="Enter message..."
-                {...register("message", validations.message)}
-              ></textarea>
-              <span className="help is-danger">
-                {errors?.message && errors.message.message}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="field is-horizontal">
-        <div className="field-label">
-          <br />
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <div className="control">
-              <button
-                onClick={sendEmail}
-                id="message-button"
-                className="button "
-                type="submit"
-              >
-                Send message
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* 
-      <Footer /> */}
-    </form>
+    <div className="App">
+      <Typography gutterBottom variant="h3" align="center">
+        React-App
+      </Typography>
+      <Grid>
+        <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5">
+              Contact Us
+            </Typography>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              gutterBottom
+            >
+              Fill up the form and our team will get back to you within 24
+              hours.
+            </Typography>
+            <form
+              ref={form}
+              onSubmit={handleSubmit(handleEmail, handleError)}
+              id="contact-form-container"
+            >
+              <Grid container spacing={1}>
+                <Grid xs={12} sm={6} item>
+                  <TextField
+                    placeholder="Enter first name"
+                    label="First Name"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    name="name"
+                    className="input "
+                    {...register("name", validations.name)}
+                  />
+                  <span className="help is-danger">
+                    {errors?.name && errors.name.message}
+                  </span>
+                  <span className="icon is-small is-left">
+                    <FontAwesomeIcon icon={faUser} />
+                  </span>
+                </Grid>
+                <Grid xs={12} sm={6} item>
+                  <TextField
+                    placeholder="Enter last name"
+                    label="Last Name"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    name="name"
+                    className="input "
+                    {...register("name", validations.name)}
+                  />
+                  <span className="help is-danger">
+                    {errors?.name && errors.name.message}
+                  </span>
+                  <span className="icon is-small is-left">
+                    <FontAwesomeIcon icon={faUser} />
+                  </span>
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="email"
+                    placeholder="Enter email"
+                    label="Email"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    name="email"
+                    className="input "
+                    {...register("email", validations.email)}
+                  />
+                  <span className="help is-danger">
+                    {errors?.email && errors.email.message}
+                  </span>
+                  <span className="icon is-small is-left">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </span>
+                  <span className="icon is-small is-right">
+                    <FontAwesomeIcon icon={faCheck} />
+                  </span>
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="number"
+                    placeholder="Enter phone number"
+                    label="Phone"
+                    variant="outlined"
+                    fullWidth
+                    required
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Message"
+                    multiline
+                    rows={4}
+                    placeholder="Type your message here"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    name="message"
+                    className="textarea"
+                    {...register("message", validations.message)}
+                  />
+                  <span className="help is-danger">
+                    {errors?.message && errors.message.message}
+                  </span>
+                </Grid>
+                <Grid item xs={12}>
+                  <Button
+                    onClick={sendEmail}
+                    id="message-button"
+                    className="submitButton "
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    fullWidth
+                  >
+                    Submit
+                  </Button>
+                </Grid>
+              </Grid>
+            </form>
+          </CardContent>
+        </Card>
+      </Grid>
+    </div>
   );
 }
