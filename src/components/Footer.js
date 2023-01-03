@@ -19,7 +19,7 @@ export default function Footer() {
         <Container maxWidth="lg">
           <Grid container spaceing={5}>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>
+              <Box className="content" borderBottom={1}>
                 <Box>
                   <motion.div
                     whileHover={{ scale: 1.1 }}

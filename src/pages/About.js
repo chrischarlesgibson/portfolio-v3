@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Avatar, Divider, Typography } from "@mui/material";
+import "../styles/about.css";
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
       <Avatar
         alt="Remy Sharp"
         src="/static/images/avatar/1.jpg"
-        sx={{ width: 56, height: 56 }}
+        sx={{ width: 200, height: 200 }}
       />
       <Divider />
       <Typography variant="body1">

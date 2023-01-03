@@ -1,3 +1,28 @@
+/* .footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  height: 100px;
+  display: inline-block;
+} */
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer Link {
+  display: block;
+} */
+
 .footer {
   width: 100%;
   position: fixed;
@@ -6,13 +31,9 @@
   height: 100px;
   display: inline-block;
 }
-
-.content.has-text-centered {
+.content {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.footer Link {
-  display: block;
+  justify-content: space-evenly;
+  border-bottom: 1px solid;
 }
