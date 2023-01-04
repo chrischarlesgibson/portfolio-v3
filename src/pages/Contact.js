@@ -2,9 +2,10 @@ import React, { useRef } from "react";
 // import { makeStyles } from '@material-ui/core/styles';
 // import { TextField, Button } from '@mui/material'
 import emailjs from "@emailjs/browser";
+
 // import Footer from "./Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
+import "../styles/contact.css";
+
 import {
   Grid,
   TextField,
@@ -35,7 +36,14 @@ export default function Contact() {
   const handleError = (errors) => console.error(errors);
 
   const validations = {
-    name: {
+    firstname: {
+      required: "name required.",
+      minLength: {
+        value: 2,
+        message: "name should be at-least 2 characters.",
+      },
+    },
+    lastname: {
       required: "name required.",
       minLength: {
         value: 2,
@@ -64,10 +72,14 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        // process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        // process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        // form.current,
+        // process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        "service_2csukpf",
+        "template_uqxju68",
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        "YC8aaQfJCs6lk22CO"
       )
       .then(
         (result) => {
@@ -114,15 +126,12 @@ export default function Contact() {
                     variant="outlined"
                     fullWidth
                     required
-                    name="name"
+                    name="firstname"
                     className="input "
-                    {...register("name", validations.name)}
+                    {...register("firstname", validations.firstname)}
                   />
-                  <span className="help is-danger">
-                    {errors?.name && errors.name.message}
-                  </span>
-                  <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={faUser} />
+                  <span className="errorMessage">
+                    {errors?.firstname && errors.firstname.message}
                   </span>
                 </Grid>
                 <Grid xs={12} sm={6} item>
@@ -132,15 +141,12 @@ export default function Contact() {
                     variant="outlined"
                     fullWidth
                     required
-                    name="name"
+                    name="lastname"
                     className="input "
-                    {...register("name", validations.name)}
+                    {...register("lastname", validations.lastname)}
                   />
-                  <span className="help is-danger">
-                    {errors?.name && errors.name.message}
-                  </span>
-                  <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={faUser} />
+                  <span className="errorMessage">
+                    {errors?.lastname && errors.lastname.message}
                   </span>
                 </Grid>
                 <Grid item xs={12}>
@@ -155,14 +161,8 @@ export default function Contact() {
                     className="input "
                     {...register("email", validations.email)}
                   />
-                  <span className="help is-danger">
+                  <span className="errorMessage">
                     {errors?.email && errors.email.message}
-                  </span>
-                  <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                  </span>
-                  <span className="icon is-small is-right">
-                    <FontAwesomeIcon icon={faCheck} />
                   </span>
                 </Grid>
                 <Grid item xs={12}>
@@ -172,7 +172,8 @@ export default function Contact() {
                     label="Phone"
                     variant="outlined"
                     fullWidth
-                    required
+                    {...register("message", validations.message)}
+                    name="phonenumber"
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -188,7 +189,7 @@ export default function Contact() {
                     className="textarea"
                     {...register("message", validations.message)}
                   />
-                  <span className="help is-danger">
+                  <span className="errorMessage">
                     {errors?.message && errors.message.message}
                   </span>
                 </Grid>
