@@ -15,46 +15,23 @@ import {
 export default function Footer() {
   return (
     <footer className="footer">
-      <Box>
-        <Container maxWidth="lg">
-          <Grid container spaceing={5}>
-            <Grid item xs={12} sm={4}>
-              <Box className="content" borderBottom={1}>
-                <Box>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Link href="https://github.com/chrischarlesgibson?tab=repositories">
-                      <FontAwesomeIcon icon={faGithub} />
-                    </Link>
-                  </motion.div>
-                </Box>
-                <Box>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Link href="https://www.linkedin.com/in/chris-gibson-415909250/">
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </Link>
-                  </motion.div>
-                </Box>
-                <Box>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Link href="https://medium.com/@chrischarlesgibson">
-                      <FontAwesomeIcon icon={faMedium} />
-                    </Link>
-                  </motion.div>
-                </Box>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <Link href="https://github.com/chrischarlesgibson?tab=repositories">
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
+      </motion.div>
+
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <Link href="https://www.linkedin.com/in/chris-gibson-415909250/">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Link>
+      </motion.div>
+
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <Link href="https://medium.com/@chrischarlesgibson">
+          <FontAwesomeIcon icon={faMedium} />
+        </Link>
+      </motion.div>
     </footer>
   );
 }

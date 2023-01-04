@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
-// import { makeStyles } from '@material-ui/core/styles';
-// import { TextField, Button } from '@mui/material'
+
 import emailjs from "@emailjs/browser";
 
-// import Footer from "./Footer";
 import "../styles/contact.css";
 
 import {
@@ -14,10 +12,8 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-// import "../styles/contactMe.css";
-// import { init } from "@emailjs/browser";
+
 import { useForm } from "react-hook-form";
-// // init("REACT_APP_EMAILJS_USER_ID");
 
 export default function Contact() {
   const form = useRef();
@@ -68,7 +64,6 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // if (name && emailAddress && emailMessage) {
 
     emailjs
       .sendForm(
@@ -102,7 +97,7 @@ export default function Contact() {
         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
           <CardContent>
             <Typography gutterBottom variant="h5">
-              Contact Us
+              Contact Me
             </Typography>
             <Typography
               variant="body2"
@@ -110,8 +105,7 @@ export default function Contact() {
               component="p"
               gutterBottom
             >
-              Fill up the form and our team will get back to you within 24
-              hours.
+              Fill out the form and I will get back to you as soon as possible.
             </Typography>
             <form
               ref={form}
