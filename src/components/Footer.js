@@ -1,10 +1,6 @@
 import React from "react";
 import "../styles/footer.css";
-// import Container from "@material-ui/core/Container";
-// import Grid from "@material-ui/core/Grid";
-// import Box from "@material-ui/core/Box";
-// import Link from "@material-ui/core/Link";
-import { Container, Grid, Box, Link } from "@mui/material";
+import { Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 import emailjs from "@emailjs/browser";
-
+import ContactModal from "../components/contactModal";
 import "../styles/contact.css";
 
 import {
@@ -16,6 +16,7 @@ import {
 import { useForm } from "react-hook-form";
 
 export default function Contact() {
+  const [modalOpen, setModalOpen] = React.useState(false);
   const form = useRef();
 
   const {
@@ -79,6 +80,9 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          if (result.text === "OK") {
+            setModalOpen(true);
+          }
         },
         (error) => {
           console.log(error.text);
@@ -90,15 +94,13 @@ export default function Contact() {
 
   return (
     <div className="App">
+      <ContactModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Typography gutterBottom variant="h3" align="center">
-        React-App
+        Contact Me
       </Typography>
       <Grid>
         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
           <CardContent>
-            <Typography gutterBottom variant="h5">
-              Contact Me
-            </Typography>
             <Typography
               variant="body2"
               color="textSecondary"
