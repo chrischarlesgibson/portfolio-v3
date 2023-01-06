@@ -1,0 +1,20 @@
+.resumeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.leftResumeGrid {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.resumePDF {
+  height: 100%;
+  width: 100%;
+}
+.resumeCard {
+  height: 100%;
+  width: 100%;
+}

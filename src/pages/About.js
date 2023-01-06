@@ -1,18 +1,26 @@
 import * as React from "react";
 import { Avatar, Divider, Typography } from "@mui/material";
 import "../styles/about.css";
-
+import headshot from "../images/headshot.jpeg";
 export default function About() {
   return (
     <div className="about-container">
       <Avatar
-        alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
+        alt="Chris Gibson"
+        src={headshot}
         sx={{ width: 200, height: 200 }}
       />
       <Divider />
-      <Typography variant="body1">
-        This is a short paragraph of text that appears after the divider.
+      <Typography className="bio" variant="body1">
+        I'm a full-stack developer that has a strong history in project
+        management. I graduated from UW-Madison in 2018 with a degree in Biology
+        and I have working as a project manager in the biotech industry for the
+        last 4 years. I recently made a career switch into coding and I
+        graduated from UC-Berkeley's full-stack coding bootcamp in December
+        2022. I'm currently looking for new oppourtunities and challenges so I
+        created this porfolio page to display my talents and my work. Please
+        take a look at my projects and skills and contact me if you are
+        interested.
       </Typography>
     </div>
   );

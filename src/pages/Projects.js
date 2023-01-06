@@ -13,10 +13,8 @@ export default function ProjectContainer() {
         <Grid container spacing={3}>
           {projects.map((project) => (
             <Grid item xs={12} sm={6} md={4} key={project.id}>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link href={project.appUrl}>
-                  <ProjectCard project={project} key={project.id} />
-                </Link>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <ProjectCard project={project} key={project.id} />
               </motion.div>
             </Grid>
           ))}

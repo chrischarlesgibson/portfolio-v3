@@ -5,14 +5,15 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import "../styles/projectCard.css";
 
 export default function ProjectCard(props) {
   console.log(props.project);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="projectCard" sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt={props.project.title}
         height="140"
         image={props.project.thumbnail}
       />
