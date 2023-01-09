@@ -98,7 +98,7 @@ export default function Contact() {
       <Typography gutterBottom variant="h3" align="center">
         Contact Me
       </Typography>
-      <Grid>
+      <Grid className="contactContainer">
         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
           <CardContent>
             <Typography

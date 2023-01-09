@@ -1,16 +1,8 @@
 import resumePDF from "../images/Resume_10-21-2021.pdf";
-
+import resumeImage from "../images/Resume2.png";
 import * as React from "react";
-import {
-  Grid,
-  Divider,
-  Button,
-  CardActionArea,
-  CardActions,
-  Card,
-  List,
-  ListItem,
-} from "@mui/material";
+import { motion } from "framer-motion";
+import { Grid, Divider, Card, List, ListItem, Typography } from "@mui/material";
 import "../styles/resume.css";
 const skills = [
   "JavaScript",
@@ -35,11 +27,33 @@ const skills = [
 ];
 function SkillsList() {
   return (
-    <List>
-      {skills.map((skill) => (
-        <ListItem key={skill}>•{skill}</ListItem>
-      ))}
-    </List>
+    <>
+      <Grid container justify="center">
+        <Typography variant="h5" style={{ textAlign: "center" }}>
+          Skills
+        </Typography>
+      </Grid>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <List>
+            {skills.slice(0, Math.ceil(skills.length / 2)).map((skill) => (
+              <ListItem className="skill" key={skill}>
+                •{skill}
+              </ListItem>
+            ))}
+          </List>
+        </Grid>
+        <Grid item xs={6}>
+          <List>
+            {skills.slice(Math.ceil(skills.length / 2)).map((skill) => (
+              <ListItem className="skill" key={skill}>
+                •{skill}
+              </ListItem>
+            ))}
+          </List>
+        </Grid>
+      </Grid>
+    </>
   );
 }
 
@@ -48,28 +62,20 @@ export default function Resume() {
     <Grid className="resumeContainer" container>
       <Grid className="leftResumeGrid" item xs>
         <Card className="resumeCard">
-          <CardActionArea>
-            <object
-              className="resumePDF"
-              data={resumePDF}
-              type="application/pdf"
-            >
-              <p>
-                Your browser does not support PDFs. Download the PDF to view it:{" "}
-                <a href={resumePDF}>Download PDF</a>
-              </p>
-            </object>
-          </CardActionArea>
-          <CardActions>
-            <Button
-              target="_blank"
-              href={resumePDF}
-              size="small"
-              color="primary"
-            >
-              Download
-            </Button>
-          </CardActions>
+          <a
+            className="resumeLink"
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.img
+              className="resumeImage"
+              src={resumeImage}
+              alt="resume"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.01 }}
+            ></motion.img>
+          </a>
         </Card>
       </Grid>
       <Divider

@@ -14,8 +14,8 @@ export default function ProjectCard(props) {
       <CardMedia
         component="img"
         alt={props.project.title}
-        height="140"
         image={props.project.thumbnail}
+        style={{ width: "100%", height: "40%" }}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -28,11 +28,15 @@ export default function ProjectCard(props) {
       <CardActions>
         <Button size="small">
           {" "}
-          <a href={props.project.repo}>repo</a>
+          <a href={props.project.repo} target="_blank" rel="noreferrer">
+            repo
+          </a>
         </Button>
         <Button size="small">
           {" "}
-          <a href={props.project.appUrl}>live site</a>
+          <a target="_blank" rel="noreferrer" href={props.project.appUrl}>
+            live site
+          </a>
         </Button>
       </CardActions>
     </Card>

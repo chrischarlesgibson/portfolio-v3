@@ -1,20 +1,50 @@
-.resumeContainer {
+/* .resumeContainer {
   width: 100vw;
   height: 100vh;
   display: flex;
-}
+} */
 .leftResumeGrid {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .resumePDF {
   height: 100%;
   width: 100%;
 }
 .resumeCard {
+  box-shadow: none !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   height: 100%;
   width: 100%;
+}
+
+.resumeImage {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.resumeLink {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* .leftTitle {
+  text-align: center;
+  top: 0;
+  position: absolute;
+} */
+
+.skill {
+  width: 50%;
 }

@@ -27,7 +27,7 @@ export const projects = [
     id: 3,
     title: "LivHealthy",
     description:
-      "This is an app for guidance on living healthy(or, LivHealthy). Here is a place for any individual to visit - searching for detailed recipes and exercises to fit their lifestyle needs and capacity while guided by inspirational, motivating quotes.",
+      "This is an app for guidance on living healthy(or, LivHealthy)",
     thumbnail: livHealthyPic,
     repo: "https://github.com/chrischarlesgibson/LivHealthy",
     appUrl: "https://thedomconrad.github.io/LivHealthy/",
@@ -35,8 +35,7 @@ export const projects = [
   {
     id: 4,
     title: "NoteMaker3000",
-    description:
-      "NoteMaker3000 is an application that uses node.js and express.js to allow users to enter notes, save them and delete them. it's the perfect app for any student or anyone who wants to keep track of important info. ",
+    description: "NoteMaker3000 is the ultimate note-taking app. ",
     thumbnail: noteTakerPic,
     repo: "https://github.com/chrischarlesgibson/The-NoteMaker-3000",
     appUrl: "https://the-notemaker-3000.herokuapp.com/",
@@ -45,7 +44,7 @@ export const projects = [
     id: 5,
     title: "Blogspot",
     description:
-      "Blogspot is a webpage built for tech people who want to read and write all things tech related. It's a grass-roots blog community for tech people by tech people. ",
+      "Blogspot is a webpage built for tech people who want to read and write all things tech related.",
     thumbnail: blogspotPic,
     repo: "https://github.com/chrischarlesgibson/blogspot",
     appUrl: "https://warm-coast-31406.herokuapp.com/",
