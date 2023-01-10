@@ -2,6 +2,7 @@ import * as React from "react";
 import { Avatar, Divider, Typography } from "@mui/material";
 import "../styles/about.css";
 import headshot from "../images/headshot.jpeg";
+
 export default function About() {
   return (
     <div className="about-container">
@@ -10,7 +11,9 @@ export default function About() {
         src={headshot}
         sx={{ width: 200, height: 200 }}
       />
+
       <Divider />
+
       <Typography className="bio" variant="body1">
         I'm a full-stack developer that has a strong history in project
         management. I graduated from UW-Madison in 2018 with a degree in Biology
