@@ -19,3 +19,6 @@
   color: yellow;
   border-bottom: 1px solid white;
 }
+.navBar {
+  box-shadow: none !important;
+}

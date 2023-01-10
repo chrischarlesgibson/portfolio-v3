@@ -3,3 +3,19 @@
   height: 40vh;
   margin-bottom: 5vh;
 }
+.projectHeader {
+  text-align: center;
+}
+
+@media (max-width: 599.98px) {
+  .projectCard {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (min-width: 600px) and (max-width: 959.98px) {
+  .projectCard {
+    width: 300px;
+    height: 350px;
+  }
+}

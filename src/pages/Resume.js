@@ -2,7 +2,7 @@ import resumePDF from "../images/Resume_10-21-2021.pdf";
 import resumeImage from "../images/Resume2.png";
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Grid, Divider, Card, List, ListItem, Typography } from "@mui/material";
+import { Grid, Divider, Card, List, ListItem } from "@mui/material";
 import "../styles/resume.css";
 const skills = [
   "JavaScript",
@@ -28,14 +28,12 @@ const skills = [
 function SkillsList() {
   return (
     <>
-      <Grid container justify="center">
-        <Typography variant="h5" style={{ textAlign: "center" }}>
-          Skills
-        </Typography>
+      <Grid>
+        <h2 className="skillsHeader">Skills</h2>
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <List>
+          <List className="skillsList">
             {skills.slice(0, Math.ceil(skills.length / 2)).map((skill) => (
               <ListItem className="skill" key={skill}>
                 •{skill}
@@ -62,6 +60,7 @@ export default function Resume() {
     <Grid className="resumeContainer" container>
       <Grid className="leftResumeGrid" item xs>
         <Card className="resumeCard">
+          <h2 className="resumeHeader">click resume to download</h2>
           <a
             className="resumeLink"
             href={resumePDF}
@@ -79,7 +78,7 @@ export default function Resume() {
         </Card>
       </Grid>
       <Divider
-        sx={{ borderRightWidth: 5, marginTop: "5%", marginBottom: "5%" }}
+        sx={{ borderRightWidth: 3, marginTop: "3%", marginBottom: "3%" }}
         orientation="vertical"
         flexItem
       ></Divider>

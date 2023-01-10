@@ -22,16 +22,6 @@ function NavBurger() {
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link to="/" className="burgerLink">
-                  Home
-                </Link>
-              </motion.div>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenBurger(false)}>
-            <ListItemText>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Link to="/about" className="burgerLink">
                   About
                 </Link>
@@ -42,8 +32,8 @@ function NavBurger() {
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link to="/contact" className="burgerLink">
-                  Contact
+                <Link to="/projects" className="burgerLink">
+                  Projects
                 </Link>
               </motion.div>
             </ListItemText>
@@ -52,8 +42,18 @@ function NavBurger() {
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link to="/about" className="burgerLink">
-                  Faq
+                <Link to="/resume" className="burgerLink">
+                  Resume
+                </Link>
+              </motion.div>
+            </ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem onClick={() => setOpenBurger(false)}>
+            <ListItemText>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link to="/contact" className="burgerLink">
+                  Contact
                 </Link>
               </motion.div>
             </ListItemText>

@@ -1,4 +1,4 @@
-import { Container, Grid, Link } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import React from "react";
 // import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
@@ -8,7 +8,7 @@ export default function ProjectContainer() {
   console.log(projects);
   return (
     <section>
-      <h1>Projects</h1>
+      <h1 className="projectHeader">Projects</h1>
       <Container className="cardContainer">
         <Grid container spacing={3}>
           {projects.map((project) => (
