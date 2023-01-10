@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.04044b48.css",
-    "main.js": "/portfolio/static/js/main.538ac813.js",
-    "static/media/LivHealthy.png": "/portfolio/static/media/LivHealthy.2277272261524f2109fe.png",
-    "static/media/loveisblurPic.png": "/portfolio/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
-    "static/media/purpleWaive.png": "/portfolio/static/media/purpleWaive.bddd5955c8a38612e913.png",
-    "static/media/weathercast.png": "/portfolio/static/media/weathercast.a57d22d217a9760166e2.png",
-    "static/media/headshot.jpeg": "/portfolio/static/media/headshot.32ac3cbf52304e7121c5.jpeg",
-    "static/media/Resume2.png": "/portfolio/static/media/Resume2.4ac87227766ea4abbaea.png",
-    "static/media/noteTaker3000.png": "/portfolio/static/media/noteTaker3000.39ef2e3bf3dd439efe88.png",
-    "static/media/Blogspot.png": "/portfolio/static/media/Blogspot.80c703f1cddef34c5757.png",
-    "static/media/Resume_10-21-2021.pdf": "/portfolio/static/media/Resume_10-21-2021.ec612357002d2308cfce.pdf",
-    "index.html": "/portfolio/index.html",
-    "main.04044b48.css.map": "/portfolio/static/css/main.04044b48.css.map",
-    "main.538ac813.js.map": "/portfolio/static/js/main.538ac813.js.map"
+    "main.css": "/portfolio-v3/static/css/main.04044b48.css",
+    "main.js": "/portfolio-v3/static/js/main.d509bc09.js",
+    "static/media/LivHealthy.png": "/portfolio-v3/static/media/LivHealthy.2277272261524f2109fe.png",
+    "static/media/loveisblurPic.png": "/portfolio-v3/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
+    "static/media/purpleWaive.png": "/portfolio-v3/static/media/purpleWaive.bddd5955c8a38612e913.png",
+    "static/media/weathercast.png": "/portfolio-v3/static/media/weathercast.a57d22d217a9760166e2.png",
+    "static/media/headshot.jpeg": "/portfolio-v3/static/media/headshot.32ac3cbf52304e7121c5.jpeg",
+    "static/media/Resume2.png": "/portfolio-v3/static/media/Resume2.4ac87227766ea4abbaea.png",
+    "static/media/noteTaker3000.png": "/portfolio-v3/static/media/noteTaker3000.39ef2e3bf3dd439efe88.png",
+    "static/media/Blogspot.png": "/portfolio-v3/static/media/Blogspot.80c703f1cddef34c5757.png",
+    "static/media/Resume_10-21-2021.pdf": "/portfolio-v3/static/media/Resume_10-21-2021.ec612357002d2308cfce.pdf",
+    "index.html": "/portfolio-v3/index.html",
+    "main.04044b48.css.map": "/portfolio-v3/static/css/main.04044b48.css.map",
+    "main.d509bc09.js.map": "/portfolio-v3/static/js/main.d509bc09.js.map"
   },
   "entrypoints": [
     "static/css/main.04044b48.css",
-    "static/js/main.538ac813.js"
+    "static/js/main.d509bc09.js"
   ]
 }
