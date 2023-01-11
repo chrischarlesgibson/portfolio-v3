@@ -8,6 +8,8 @@ Welcome to my portfolio repository.... Click on the link below to check out my p
 
 [link to my porfolio on Github pages](https://chrischarlesgibson.github.io/portfolio-react/)
 
+![pic of app in action](./src/images/pageScreenshot.png)
+
 ## Table of Contents
 
 - [Description](#Description)
@@ -57,8 +59,6 @@ Here are the dependencies and scripts needed to run this app locally:
 ## Usage
 
 Just click on the github pages link to open the app or if you want to use this app locally, first go to the to root directory, and open an integrated terminal and run "Npm install" and then "npm run start". This will build and open up the react app.
-
-![pic of app in action](./src/images/pageScreenshot.png)
 
 ## Built With
 
