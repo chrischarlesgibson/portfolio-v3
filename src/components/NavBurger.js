@@ -22,6 +22,16 @@ function NavBurger() {
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link to="/home" className="burgerLink">
+                  Home
+                </Link>
+              </motion.div>
+            </ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem onClick={() => setOpenBurger(false)}>
+            <ListItemText>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Link to="/about" className="burgerLink">
                   About
                 </Link>
@@ -29,6 +39,7 @@ function NavBurger() {
             </ListItemText>
           </ListItem>
           <Divider />
+
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -62,7 +73,7 @@ function NavBurger() {
         </List>
       </Drawer>
       <IconButton onClick={() => setOpenBurger(!openBurger)} className="icon">
-        <MenuIcon />
+        <MenuIcon className="menuIcon" />
       </IconButton>
     </>
   );

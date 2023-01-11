@@ -95,20 +95,17 @@ export default function Contact() {
   return (
     <div className="App">
       <ContactModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
-      <Typography gutterBottom variant="h3" align="center">
+      <Typography
+        className="contactHeader"
+        gutterBottom
+        variant="h3"
+        align="center"
+      >
         Contact Me
       </Typography>
       <Grid className="contactContainer">
         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
           <CardContent>
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              component="p"
-              gutterBottom
-            >
-              Fill out the form and I will get back to you as soon as possible.
-            </Typography>
             <form
               ref={form}
               onSubmit={handleSubmit(handleEmail, handleError)}

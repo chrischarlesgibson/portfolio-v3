@@ -6,7 +6,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-
+import Home from "./pages/Home";
+import "./styles/global.css";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route exact path="/Home" element={<Home />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Projects" element={<Projects />} />
           <Route exact path="/Resume" element={<Resume />} />

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: #3d405b;
 }
 
 .about-container > * {
@@ -14,4 +15,5 @@
 .bio {
   padding-left: 20%;
   padding-right: 20%;
+  font-size: 1.5em !important;
 }

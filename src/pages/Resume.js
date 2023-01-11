@@ -1,7 +1,8 @@
-import resumePDF from "../images/Resume_10-21-2021.pdf";
-import resumeImage from "../images/Resume2.png";
+import resumePDF from "../images/Chris_Gibson_resume_11020223.pdf";
+import resumeImage from "../images/resumeImage.png";
 import * as React from "react";
 import { motion } from "framer-motion";
+
 import { Grid, Divider, Card, List, ListItem } from "@mui/material";
 import "../styles/resume.css";
 const skills = [
@@ -28,7 +29,7 @@ const skills = [
 function SkillsList() {
   return (
     <>
-      <Grid>
+      <Grid className="rightResumePage">
         <h2 className="skillsHeader">Skills</h2>
       </Grid>
       <Grid container spacing={2}>
@@ -80,6 +81,7 @@ export default function Resume() {
       <Divider
         sx={{ borderRightWidth: 3, marginTop: "3%", marginBottom: "3%" }}
         orientation="vertical"
+        className="divider"
         flexItem
       ></Divider>
       <Grid item xs>

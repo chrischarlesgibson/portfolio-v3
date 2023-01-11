@@ -23,10 +23,16 @@ function Navbar() {
         <Typography variant="h4" className="logo">
           Chris Gibson
         </Typography>
+
         {isMobile ? (
           <NavBurger />
         ) : (
           <div className="navlinks">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/Home" className="link">
+                Home
+              </Link>
+            </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link to="/About" className="link">
                 About
