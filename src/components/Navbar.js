@@ -29,11 +29,6 @@ function Navbar() {
         ) : (
           <div className="navlinks">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Link to="/Home" className="link">
-                Home
-              </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link to="/About" className="link">
                 About
               </Link>
