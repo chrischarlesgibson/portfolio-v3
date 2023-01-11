@@ -6,7 +6,7 @@
 
 Welcome to my portfolio repository.... Click on the link below to check out my portfolio page on Github pages! It is built using react, MUI, email.js, Framer and react-hook-form among others.
 
-[link to my porfolio on Github pages](https://chrischarlesgibson.github.io/portfolio-react/)
+[link to my porfolio on Github pages](https://chrischarlesgibson.github.io/portfolio-v3/)
 
 ![pic of app in action](./src/images/pageScreenshot.png)
 
