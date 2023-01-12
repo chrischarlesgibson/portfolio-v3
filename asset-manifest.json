@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://chrischarlesgibson.github.io/portfolio-v3/static/css/main.7adc044c.css",
-    "main.js": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.c6783aa0.js",
+    "main.js": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.e2a4d062.js",
     "static/media/LivHealthy.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/LivHealthy.2277272261524f2109fe.png",
     "static/media/loveisblurPic.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
     "static/media/purpleWaive.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/purpleWaive.bddd5955c8a38612e913.png",
@@ -13,10 +13,10 @@
     "static/media/Blogspot.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/Blogspot.80c703f1cddef34c5757.png",
     "index.html": "https://chrischarlesgibson.github.io/portfolio-v3/index.html",
     "main.7adc044c.css.map": "https://chrischarlesgibson.github.io/portfolio-v3/static/css/main.7adc044c.css.map",
-    "main.c6783aa0.js.map": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.c6783aa0.js.map"
+    "main.e2a4d062.js.map": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.e2a4d062.js.map"
   },
   "entrypoints": [
     "static/css/main.7adc044c.css",
-    "static/js/main.c6783aa0.js"
+    "static/js/main.e2a4d062.js"
   ]
 }
