@@ -11,7 +11,7 @@ import "./styles/global.css";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         <Navbar />
         <Routes>
