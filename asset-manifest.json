@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Home/static/css/main.7adc044c.css",
-    "main.js": "/Home/static/js/main.17d090d1.js",
-    "static/media/LivHealthy.png": "/Home/static/media/LivHealthy.2277272261524f2109fe.png",
-    "static/media/loveisblurPic.png": "/Home/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
-    "static/media/purpleWaive.png": "/Home/static/media/purpleWaive.bddd5955c8a38612e913.png",
-    "static/media/weathercast.png": "/Home/static/media/weathercast.a57d22d217a9760166e2.png",
-    "static/media/headshot.jpeg": "/Home/static/media/headshot.32ac3cbf52304e7121c5.jpeg",
-    "static/media/resumeImage.png": "/Home/static/media/resumeImage.6a509bd06f4a03d4b51e.png",
-    "static/media/Chris_Gibson_resume_11020223.pdf": "/Home/static/media/Chris_Gibson_resume_11020223.79b1cb6024da395fda67.pdf",
-    "static/media/noteTaker3000.png": "/Home/static/media/noteTaker3000.39ef2e3bf3dd439efe88.png",
-    "static/media/Blogspot.png": "/Home/static/media/Blogspot.80c703f1cddef34c5757.png",
-    "index.html": "/Home/index.html",
-    "main.7adc044c.css.map": "/Home/static/css/main.7adc044c.css.map",
-    "main.17d090d1.js.map": "/Home/static/js/main.17d090d1.js.map"
+    "main.css": "https://chrischarlesgibson.github.io/portfolio-v3/static/css/main.7adc044c.css",
+    "main.js": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.c6783aa0.js",
+    "static/media/LivHealthy.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/LivHealthy.2277272261524f2109fe.png",
+    "static/media/loveisblurPic.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
+    "static/media/purpleWaive.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/purpleWaive.bddd5955c8a38612e913.png",
+    "static/media/weathercast.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/weathercast.a57d22d217a9760166e2.png",
+    "static/media/headshot.jpeg": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/headshot.32ac3cbf52304e7121c5.jpeg",
+    "static/media/resumeImage.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/resumeImage.6a509bd06f4a03d4b51e.png",
+    "static/media/Chris_Gibson_resume_11020223.pdf": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/Chris_Gibson_resume_11020223.79b1cb6024da395fda67.pdf",
+    "static/media/noteTaker3000.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/noteTaker3000.39ef2e3bf3dd439efe88.png",
+    "static/media/Blogspot.png": "https://chrischarlesgibson.github.io/portfolio-v3/static/media/Blogspot.80c703f1cddef34c5757.png",
+    "index.html": "https://chrischarlesgibson.github.io/portfolio-v3/index.html",
+    "main.7adc044c.css.map": "https://chrischarlesgibson.github.io/portfolio-v3/static/css/main.7adc044c.css.map",
+    "main.c6783aa0.js.map": "https://chrischarlesgibson.github.io/portfolio-v3/static/js/main.c6783aa0.js.map"
   },
   "entrypoints": [
     "static/css/main.7adc044c.css",
-    "static/js/main.17d090d1.js"
+    "static/js/main.c6783aa0.js"
   ]
 }
