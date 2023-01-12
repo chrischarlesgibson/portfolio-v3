@@ -19,8 +19,6 @@ function NavBurger() {
     <>
       <Drawer open={openBurger} onClose={() => setOpenBurger(false)}>
         <List>
-          
-         
           <ListItem onClick={() => setOpenBurger(false)}>
             <ListItemText>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
