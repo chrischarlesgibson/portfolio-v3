@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Grid, Typography } from "@mui/material";
-import "../styles/home.css";
+import "./home.css";
 
 export default function Home() {
   return (
