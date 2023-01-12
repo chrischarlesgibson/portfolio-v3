@@ -17,6 +17,7 @@ Welcome to my portfolio repository.... Click on the link below to check out my p
 - [Usage](#Usage)
 - [Built-With](#Built-With)
 - [Author](#Author)
+- [Credits](#Credits)
 - [Badges](#Badges)
 - [License](#License)
 
@@ -76,6 +77,10 @@ Just click on the github pages link to open the app or if you want to use this a
 **Chris Gibson**
 
 - [Link to Chris's LinkedIn](https://www.linkedin.com/in/chris-gibson-415909250/)
+
+## Credits
+
+- Github user rafgraph for 404.html workaround code. [Link to their repository](https://github.com/rafgraph/spa-github-pages)
 
 ## Badges
 
