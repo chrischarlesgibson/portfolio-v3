@@ -4,10 +4,9 @@
   justify-content: center;
   flex-wrap: nowrap;
   background-color: #cccccc;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
-  position: relative;
+  position: fixed;
   height: 50px;
 }
 

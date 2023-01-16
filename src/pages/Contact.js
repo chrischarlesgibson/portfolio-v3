@@ -72,10 +72,6 @@ export default function Contact() {
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        //   "service_2csukpf",
-        //   "template_uqxju68",
-        //   form.current,
-        //   "YC8aaQfJCs6lk22CO"
       )
       .then(
         (result) => {

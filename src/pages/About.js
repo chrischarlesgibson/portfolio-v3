@@ -7,6 +7,7 @@ export default function About() {
   return (
     <div className="about-container">
       <Avatar
+        className="headshot"
         alt="Chris Gibson"
         src={headshot}
         sx={{ width: 200, height: 200 }}
