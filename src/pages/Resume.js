@@ -23,7 +23,6 @@ const skills = [
   "Bulma",
   "Materialize",
   "Heroku",
-  "Git",
   "Insomnia",
 ];
 function SkillsList() {
