@@ -52,8 +52,39 @@
 
 .skillsList {
   padding-left: 10vw !important;
+  padding-right: 5vw !important;
 }
 
 .rightResumePage {
   color: #3d405b !important;
+}
+
+@media only screen and (max-width: 1020px) {
+  .resumeContainer {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .resumeImg {
+    width: 100% !important;
+  }
+  .skillsContainer {
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .skill {
+    font-size: 1.3em !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .skill {
+    font-size: 1.2em !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    font-size: 1em !important;
+  }
 }

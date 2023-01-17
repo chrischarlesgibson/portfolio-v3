@@ -32,7 +32,7 @@ function SkillsList() {
       <Grid className="rightResumePage">
         <h2 className="skillsHeader">Skills</h2>
       </Grid>
-      <Grid container spacing={2}>
+      <Grid className="skillsContainer" container spacing={11}>
         <Grid item xs={6}>
           <List className="skillsList">
             {skills.slice(0, Math.ceil(skills.length / 2)).map((skill) => (

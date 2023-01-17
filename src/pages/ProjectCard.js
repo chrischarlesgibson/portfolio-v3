@@ -26,17 +26,23 @@ export default function ProjectCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">
-          {" "}
-          <a href={props.project.repo} target="_blank" rel="noreferrer">
-            repo
-          </a>
+        <Button
+          className="projectButton"
+          size="small"
+          href={props.project.repo}
+          target="_blank"
+          rel="noreferrer"
+        >
+          repo
         </Button>
-        <Button size="small">
-          {" "}
-          <a target="_blank" rel="noreferrer" href={props.project.appUrl}>
-            live site
-          </a>
+        <Button
+          className="projectButton"
+          size="small"
+          href={props.project.appUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          live site
         </Button>
       </CardActions>
     </Card>
