@@ -34,3 +34,10 @@
     font-size: 0.8em !important;
   }
 }
+
+.about-container a {
+  color: #3d405b;
+  text-decoration: none;
+  margin: 0 40px;
+  font-size: 25px;
+}

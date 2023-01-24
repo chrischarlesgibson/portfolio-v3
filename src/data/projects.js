@@ -4,33 +4,65 @@ import noteTakerPic from "../images/noteTaker3000.png";
 import purpleWaivePic from "../images/purpleWaive.png";
 import weatherCastPic from "../images/weathercast.png";
 import loveisblurPic from "../images/loveisblurPic.png";
+import businessWebPic from "../images/BusinessWeb.png";
+import teamifiedPic from "../images/teamified.png";
+import socialMediaPic from "../images/socialMedia.png";
 
 export const projects = [
   {
     id: 1,
-    title: "Love is blur",
-    description: "a dating app who value values",
-    thumbnail: loveisblurPic,
-    repo: "https://github.com/DraconMarius/love-is-blurr",
-    appUrl: "https://love-is-blur.herokuapp.com/",
-  },
-  {
-    id: 2,
     title: "Purple Waive",
     description:
-      "Purple wAIve uses DALLE2's artifical intellingence system to generate pictures based on user input",
+      "Purple wAIve uses DALLE2's artifical intellingence system to generate pictures based on user input.",
     thumbnail: purpleWaivePic,
     repo: "https://github.com/chrischarlesgibson/purple_wAIve",
     appUrl: "https://purple-waive.herokuapp.com/",
+    tech: [
+      "Express",
+      "Handlebars",
+      "Javascript",
+      "Sequelize",
+      "mySQL2",
+      "node-sass",
+      "Cloudinary",
+      "openai",
+      "Exress-Session",
+      "Bulma",
+    ],
+  },
+  {
+    id: 2,
+    title: "Love is blur",
+    description: "a dating app for people who value values.",
+    thumbnail: loveisblurPic,
+    repo: "https://github.com/DraconMarius/love-is-blurr",
+    appUrl: "https://love-is-blur.herokuapp.com/",
+    tech: [
+      "React",
+      "node",
+      "Javascript",
+      "MUI",
+      "Framer",
+      "react-tinder-card",
+      "Bulma",
+    ],
   },
   {
     id: 3,
     title: "LivHealthy",
     description:
-      "This is an app for guidance on living healthy(or, LivHealthy)",
+      "This is an app for guidance on living healthy(or, LivHealthy).",
     thumbnail: livHealthyPic,
     repo: "https://github.com/chrischarlesgibson/LivHealthy",
     appUrl: "https://thedomconrad.github.io/LivHealthy/",
+    tech: [
+      "HTML",
+      "jQuery",
+      "Javascript",
+      "Chart.js",
+      "RESTful APIs",
+      "Materilize",
+    ],
   },
   {
     id: 4,
@@ -39,6 +71,7 @@ export const projects = [
     thumbnail: noteTakerPic,
     repo: "https://github.com/chrischarlesgibson/The-NoteMaker-3000",
     appUrl: "https://the-notemaker-3000.herokuapp.com/",
+    tech: ["express", "uuid", "javascript", "node"],
   },
   {
     id: 5,
@@ -48,14 +81,72 @@ export const projects = [
     thumbnail: blogspotPic,
     repo: "https://github.com/chrischarlesgibson/blogspot",
     appUrl: "https://warm-coast-31406.herokuapp.com/",
+    tech: [
+      "Express",
+      "Handlebars",
+      "Javascript",
+      "Sequelize",
+      "mySQL2",
+      "Exress-Session",
+      "Materialize",
+      "bcrypt",
+      "dotenv",
+      "connect-session-sequelize",
+    ],
   },
   {
     id: 6,
     title: "WeatherCast",
     description:
-      "WeatherCast is an application that presents a current day forecast as well as a five day future forecast for each city the user searchs for",
+      "WeatherCast is an application that presents a current day forecast as well as a five day future forecast for each city the user searchs for.",
     thumbnail: weatherCastPic,
     repo: "https://github.com/chrischarlesgibson/Weather-Dashboard",
     appUrl: "https://chrischarlesgibson.github.io/Weather-Dashboard/",
+    tech: [
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "OpenWeather API",
+      "Moment.js",
+    ],
+  },
+  {
+    id: 7,
+    title: "BusinessWeb",
+    description:
+      "BusinessWeb is a command line application that helps business owners create a database for thier business.",
+    thumbnail: businessWebPic,
+    repo: "https://github.com/chrischarlesgibson/BusinessWeb",
+    demo: "https://youtu.be/Iqzj7Y3wqA4",
+    tech: ["mySQL2", "Inquirer", "console.table", "Javascript", "node.js"],
+  },
+  {
+    id: 8,
+    title: "Teamified",
+    description:
+      "Teamified is a command line application that helps users create html pages for their team. The html it creates will contain contact info about your team members.",
+    thumbnail: teamifiedPic,
+    repo: "https://github.com/chrischarlesgibson/Teamified",
+    demo: "https://youtu.be/o1SpxDWF_50",
+    tech: ["Jest", "Inquirer", "Javascript", "HTML", "CSS"],
+  },
+  {
+    id: 9,
+    title: "Social Media API",
+    description:
+      "The purpose of this project was to create the backend API of a future social media site. ",
+    thumbnail: socialMediaPic,
+    repo: "https://github.com/chrischarlesgibson/social-network-API",
+    demo: "https://youtu.be/_zijhVlMA2o",
+    tech: [
+      "Express",
+      "Mongoose",
+      "Insomnia",
+      "MongoDB",
+      "Day.js",
+      "MongoDB Compass",
+      "Javascript",
+    ],
   },
 ];

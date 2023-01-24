@@ -1,4 +1,4 @@
-import resumePDF from "../images/Chris_Gibson_resume_1172023.pdf";
+import resumePDF from "../images/ChrisGibsonResume.pdf";
 import resumeImage from "../images/resumeImage.png";
 import * as React from "react";
 import { motion } from "framer-motion";

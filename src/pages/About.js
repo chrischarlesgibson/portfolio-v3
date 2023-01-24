@@ -1,7 +1,10 @@
 import * as React from "react";
-import { Avatar, Divider, Typography } from "@mui/material";
+import { Avatar, Divider, Typography, Box, Link } from "@mui/material";
 import "../styles/about.css";
+import { motion } from "framer-motion";
 import headshot from "../images/headshot.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   return (
@@ -14,6 +17,29 @@ export default function About() {
       />
 
       <Divider />
+
+      <Typography className="bio" variant="body1">
+        {" "}
+        Email: chrischarlesgibson@gmail.com
+      </Typography>
+      <Box>
+        {" "}
+        LinkedIn:
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link href="https://www.linkedin.com/in/chris-gibson-415909250/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </Link>
+        </motion.div>
+      </Box>
+      <Box>
+        {" "}
+        Github:{" "}
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link href="https://github.com/chrischarlesgibson?tab=repositories">
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+        </motion.div>
+      </Box>
 
       <Typography className="bio" variant="body1">
         I'm a full-stack developer that has a strong history in project
