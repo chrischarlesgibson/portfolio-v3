@@ -18,7 +18,7 @@ export default function About() {
 
       <Divider />
       <div className="links-container">
-        <Typography className="bio" variant="body1">
+        <Typography className="email" variant="body1">
           {" "}
           chrischarlesgibson@gmail.com
         </Typography>

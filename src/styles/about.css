@@ -16,6 +16,7 @@
 .bio {
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 14vh !important;
 }
 
 @media (min-width: 900px) {
