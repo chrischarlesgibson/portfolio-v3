@@ -17,29 +17,36 @@ export default function About() {
       />
 
       <Divider />
-
-      <Typography className="bio" variant="body1">
-        {" "}
-        Email: chrischarlesgibson@gmail.com
-      </Typography>
-      <Box>
-        {" "}
-        LinkedIn:
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link href="https://www.linkedin.com/in/chris-gibson-415909250/">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </Link>
-        </motion.div>
-      </Box>
-      <Box>
-        {" "}
-        Github:{" "}
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link href="https://github.com/chrischarlesgibson?tab=repositories">
-            <FontAwesomeIcon icon={faGithub} />
-          </Link>
-        </motion.div>
-      </Box>
+      <div className="links-container">
+        <Typography className="bio" variant="body1">
+          {" "}
+          chrischarlesgibson@gmail.com
+        </Typography>
+        <Box>
+          {" "}
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Link
+              href="https://www.linkedin.com/in/chris-gibson-415909250/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </Link>
+          </motion.div>
+        </Box>
+        <Box>
+          {" "}
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Link
+              href="https://github.com/chrischarlesgibson?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </Link>
+          </motion.div>
+        </Box>
+      </div>
 
       <Typography className="bio" variant="body1">
         I'm a full-stack developer that has a strong history in project
