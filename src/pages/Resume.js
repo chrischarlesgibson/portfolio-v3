@@ -1,4 +1,4 @@
-import resumePDF from "../images/ChrisGibsonResume.pdf";
+import resumePDF from "../images/chrisGibsonResume.pdf";
 import resumeImage from "../images/resumeImage.png";
 import * as React from "react";
 import { motion } from "framer-motion";
@@ -7,6 +7,10 @@ import { Grid, Divider, Card, List, ListItem } from "@mui/material";
 import "../styles/resume.css";
 const skills = [
   "JavaScript",
+  "typeScript",
+  "C#",
+  ".NET",
+  "Visual Studio",
   "jQuery",
   "React",
   "MySQL",

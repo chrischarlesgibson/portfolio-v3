@@ -50,11 +50,8 @@ export default function About() {
 
       <Typography className="bio" variant="body1">
         I'm a full-stack developer that has a strong history in project
-        management. I graduated from UW-Madison in 2018 with a degree in Biology
-        and I worked as a project manager in the biotech industry for 4 years. I
-        recently made a career switch into coding and I graduated from
-        UC-Berkeley's full-stack coding bootcamp in December 2022.I have
-        experience with Javascript, React.js, SQL, MongoDB, Node.js, Express.js,
+        management. I have
+        experience with Javascript, Typescript, C#, .NET, React.js, SQL, MongoDB, Node.js, Express.js,
         GraphQL, REST APIs, Jest, and more. I am looking for new and exciting
         challenges as a full-stack developer and hope to be a key member of your
         team!
