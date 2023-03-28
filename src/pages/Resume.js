@@ -82,7 +82,11 @@ export default function Resume() {
         </Card>
       </Grid>
       <Divider
-        sx={{ borderRightWidth: 3, marginTop: "3%", marginBottom: "3%" }}
+        sx={{
+          borderRightWidth: 1,
+          marginTop: "3%",
+          marginBottom: "3%",
+        }}
         orientation="vertical"
         className="divider"
         flexItem

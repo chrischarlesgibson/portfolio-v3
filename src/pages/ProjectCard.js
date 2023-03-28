@@ -17,7 +17,6 @@ export default function ProjectCard(props) {
         alt={props.project.title}
         image={props.project.thumbnail}
         className="projectImage"
-        // style={{ width: "100%", height: "40%" }}
       />
       <CardContent>
         <Typography

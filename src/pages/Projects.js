@@ -1,6 +1,5 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-// import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../data/projects";
 import { motion } from "framer-motion";
