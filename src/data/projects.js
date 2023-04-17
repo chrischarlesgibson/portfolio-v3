@@ -118,7 +118,7 @@ export const projects = [
       "BusinessWeb is a command line application that helps business owners create a database for thier business.",
     thumbnail: businessWebPic,
     repo: "https://github.com/chrischarlesgibson/BusinessWeb",
-    demo: "https://youtu.be/Iqzj7Y3wqA4",
+    appUrl: "https://youtu.be/Iqzj7Y3wqA4",
     tech: ["mySQL2", "Inquirer", "console.table", "Javascript", "node.js"],
   },
   {
@@ -127,7 +127,7 @@ export const projects = [
     description: "This is my portfolio page made using TypeScript and Angular.",
     thumbnail: angularPortfolioPic,
     repo: "https://github.com/chrischarlesgibson/angular-portfolio",
-    demo: "https://chrischarlesgibson.github.io/angular-portfolio/",
+    appUrl: "https://chrischarlesgibson.github.io/angular-portfolio/",
     tech: ["Angular", "InquiAngular-Material", "TypeScript", "HTML", "CSS"],
   },
   {
@@ -137,7 +137,7 @@ export const projects = [
       "The purpose of this project was to create the backend API of a future social media site. ",
     thumbnail: socialMediaPic,
     repo: "https://github.com/chrischarlesgibson/social-network-API",
-    demo: "https://youtu.be/_zijhVlMA2o",
+    appUrl: "https://youtu.be/_zijhVlMA2o",
     tech: [
       "Express",
       "Mongoose",
