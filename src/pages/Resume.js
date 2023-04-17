@@ -9,6 +9,7 @@ const skills = [
   "JavaScript",
   "typeScript",
   "C#",
+  "Angular",
   ".NET",
   "Visual Studio",
   "jQuery",
@@ -24,8 +25,8 @@ const skills = [
   "Sequelize",
   "CSS3",
   "Bootstrap",
-  "Bulma",
-  "Materialize",
+  "Rest APIs",
+  "AJAX",
   "Heroku",
   "Insomnia",
 ];

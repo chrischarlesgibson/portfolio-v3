@@ -5,7 +5,7 @@ import purpleWaivePic from "../images/purpleWaive.png";
 import weatherCastPic from "../images/weathercast.png";
 import loveisblurPic from "../images/loveisblurPic.png";
 import businessWebPic from "../images/BusinessWeb.png";
-import teamifiedPic from "../images/teamified.png";
+import angularPortfolioPic from "../images/angularPortfolio.png";
 import socialMediaPic from "../images/socialMedia.png";
 
 export const projects = [
@@ -123,13 +123,12 @@ export const projects = [
   },
   {
     id: 8,
-    title: "Teamified",
-    description:
-      "Teamified is a command line application that helps users create html pages for their team. The html it creates will contain contact info about your team members.",
-    thumbnail: teamifiedPic,
-    repo: "https://github.com/chrischarlesgibson/Teamified",
-    demo: "https://youtu.be/o1SpxDWF_50",
-    tech: ["Jest", "Inquirer", "Javascript", "HTML", "CSS"],
+    title: "Angular Portfolio",
+    description: "This is my portfolio page made using TypeScript and Angular.",
+    thumbnail: angularPortfolioPic,
+    repo: "https://github.com/chrischarlesgibson/angular-portfolio",
+    demo: "https://chrischarlesgibson.github.io/angular-portfolio/",
+    tech: ["Angular", "InquiAngular-Material", "TypeScript", "HTML", "CSS"],
   },
   {
     id: 9,
