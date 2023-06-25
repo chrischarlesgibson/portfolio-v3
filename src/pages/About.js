@@ -49,12 +49,12 @@ export default function About() {
       </div>
 
       <Typography className="bio" variant="body1">
-        I'm a full-stack developer that has a strong history in project
-        management. I have
-        experience with Javascript, Typescript, C#, .NET, React.js, SQL, MongoDB, Node.js, Express.js,
-        GraphQL, REST APIs, Jest, and more. I am looking for new and exciting
-        challenges as a full-stack developer and hope to be a key member of your
-        team!
+        I'm a .Net developer currently working for Columbia County , where I'm
+        focused on application development using C#,.Net 6-7, Entity and SQL
+        server. I have experience with Javascript, Typescript, C#, .NET,
+        React.js, SQL, MongoDB, Node.js, Express.js, GraphQL, REST APIs, Jest,
+        and more. I'm looking for new and exciting challenges as a .NET
+        developer and hope to be a key member of your team.
       </Typography>
     </div>
   );
