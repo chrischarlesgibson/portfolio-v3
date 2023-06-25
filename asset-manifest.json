@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-v3/static/css/main.12d13767.css",
-    "main.js": "/portfolio-v3/static/js/main.1483ff61.js",
+    "main.js": "/portfolio-v3/static/js/main.ef7d9740.js",
     "static/media/LivHealthy.png": "/portfolio-v3/static/media/LivHealthy.2277272261524f2109fe.png",
     "static/media/loveisblurPic.png": "/portfolio-v3/static/media/loveisblurPic.3ffd85555b3add5317d3.png",
     "static/media/angularPortfolio.png": "/portfolio-v3/static/media/angularPortfolio.67ec5a50ec0e5ebe9ba7.png",
@@ -9,17 +9,17 @@
     "static/media/weathercast.png": "/portfolio-v3/static/media/weathercast.a57d22d217a9760166e2.png",
     "static/media/headshot.jpeg": "/portfolio-v3/static/media/headshot.32ac3cbf52304e7121c5.jpeg",
     "static/media/resumeImage.png": "/portfolio-v3/static/media/resumeImage.ed55bde1a51a542f9fcd.png",
-    "static/media/chrisGibsonResume.pdf": "/portfolio-v3/static/media/chrisGibsonResume.e1f5630e4c24a2578738.pdf",
+    "static/media/chrisGibsonResume.pdf": "/portfolio-v3/static/media/chrisGibsonResume.255b38658802e677a9bc.pdf",
     "static/media/BusinessWeb.png": "/portfolio-v3/static/media/BusinessWeb.eada33096c2f4f9c99d9.png",
     "static/media/noteTaker3000.png": "/portfolio-v3/static/media/noteTaker3000.39ef2e3bf3dd439efe88.png",
     "static/media/Blogspot.png": "/portfolio-v3/static/media/Blogspot.80c703f1cddef34c5757.png",
     "static/media/socialMedia.png": "/portfolio-v3/static/media/socialMedia.a3aedec7986904b0b0e0.png",
     "index.html": "/portfolio-v3/index.html",
     "main.12d13767.css.map": "/portfolio-v3/static/css/main.12d13767.css.map",
-    "main.1483ff61.js.map": "/portfolio-v3/static/js/main.1483ff61.js.map"
+    "main.ef7d9740.js.map": "/portfolio-v3/static/js/main.ef7d9740.js.map"
   },
   "entrypoints": [
     "static/css/main.12d13767.css",
-    "static/js/main.1483ff61.js"
+    "static/js/main.ef7d9740.js"
   ]
 }
