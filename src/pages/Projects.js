@@ -18,6 +18,7 @@ export default function ProjectContainer() {
             </Grid>
           ))}
         </Grid>
+        <p>Project no longer updated. 1/1/2023</p>
       </Container>
     </section>
   );

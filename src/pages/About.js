@@ -49,12 +49,12 @@ export default function About() {
       </div>
 
       <Typography className="bio" variant="body1">
-        I'm a .Net developer currently working for Columbia County , where I'm
-        focused on application development using C#,.Net 6-7, Entity and SQL
-        server. I have experience with Javascript, Typescript, C#, .NET,
-        React.js, SQL, MongoDB, Node.js, Express.js, GraphQL, REST APIs, Jest,
-        and more. I'm looking for new and exciting challenges as a .NET
-        developer and hope to be a key member of your team.
+        I'm a software engineer currently working for GE Healthcare, where I'm
+        focused on application development/improvement using C#, .Net and SQL
+        server. I have experience with Javascript, Typescript, C#,Entity
+        framework, .NET, React , SQL, MongoDB, Node.js, Express.js, GraphQL,
+        REST APIs, Jest, and more. I'm looking for new and exciting challenges
+        as a .NET developer and hope to be a key member of your team.
       </Typography>
     </div>
   );
