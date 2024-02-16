@@ -63,6 +63,7 @@ export default function ProjectCard(props) {
           site/demo
         </Button>
       </CardActions>
+      <p>Project no longer updated. 1/1/2023</p>
     </Card>
   );
 }
