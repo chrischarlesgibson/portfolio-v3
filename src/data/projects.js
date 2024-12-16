@@ -8,9 +8,34 @@ import businessWebPic from "../images/BusinessWeb.png";
 import angularPortfolioPic from "../images/angularPortfolio.png";
 import socialMediaPic from "../images/socialMedia.png";
 
+import badgerSocialsPic from "../images/badgersocialsthumbnail.jpg";
+
 export const projects = [
   {
     id: 1,
+    title: "Badger Social",
+    description:
+      "Badger Social is a professional networking site meant for real world connections",
+    thumbnail: badgerSocialsPic,
+    repo: "currently private repo",
+    appUrl: "https://badgersocials.com/home",
+    tech: [
+      "C#",
+      ".Net 8",
+      "Angular 18",
+      "SQL",
+      "SignalR",
+      "Azure cd/ci pipelines and deployment",
+      "Azure",
+      "typescript",
+      "angular material",
+      "entity framework",
+      "google maps api",
+      "google sign-in api",
+    ],
+  },
+  {
+    id: 2,
     title: "Purple Waive",
     description:
       "Purple wAIve uses DALLE2's artifical intellingence system to generate pictures based on user input.",
@@ -31,7 +56,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Love is blur",
     description: "a dating app for people who value values.",
     thumbnail: loveisblurPic,
@@ -48,7 +73,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "LivHealthy",
     description:
       "This is an app for guidance on living healthy(or, LivHealthy).",
@@ -65,7 +90,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "NoteMaker3000",
     description: "NoteMaker3000 is the ultimate note-taking app. ",
     thumbnail: noteTakerPic,
@@ -74,7 +99,7 @@ export const projects = [
     tech: ["express", "uuid", "javascript", "node"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Blogspot",
     description:
       "Blogspot is a webpage built for tech people who want to read and write all things tech related.",
@@ -95,7 +120,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "WeatherCast",
     description:
       "WeatherCast is an application that presents a current day forecast as well as a five day future forecast for each city the user searchs for.",
@@ -112,7 +137,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "BusinessWeb",
     description:
       "BusinessWeb is a command line application that helps business owners create a database for thier business.",
@@ -122,7 +147,7 @@ export const projects = [
     tech: ["mySQL2", "Inquirer", "console.table", "Javascript", "node.js"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Angular Portfolio",
     description: "This is my portfolio page made using TypeScript and Angular.",
     thumbnail: angularPortfolioPic,
@@ -131,7 +156,7 @@ export const projects = [
     tech: ["Angular", "InquiAngular-Material", "TypeScript", "HTML", "CSS"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Social Media API",
     description:
       "The purpose of this project was to create the backend API of a future social media site. ",
