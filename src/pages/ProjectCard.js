@@ -44,15 +44,20 @@ export default function ProjectCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          className="repoButton"
-          size="small"
-          href={props.project.repo}
-          target="_blank"
-          rel="noreferrer"
-        >
-          repo
-        </Button>
+        {props.project.title === "BadgerSocial" ? (
+          <p>repo is private</p>
+        ) : (
+          <Button
+            className="repoButton"
+            size="small"
+            href={props.project.repo}
+            target="_blank"
+            rel="noreferrer"
+          >
+            repo
+          </Button>
+        )}
+
         <Button
           className="siteButton"
           size="small"
@@ -63,7 +68,11 @@ export default function ProjectCard(props) {
           site/demo
         </Button>
       </CardActions>
-      <p>Project no longer maintained. 1/1/2023</p>
+      {props.project.title === "BadgerSocial" ? (
+        <p>project will be updated regularly</p>
+      ) : (
+        <p>Project no longer maintained. 1/1/2023</p>
+      )}
     </Card>
   );
 }

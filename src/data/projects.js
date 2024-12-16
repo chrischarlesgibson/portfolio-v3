@@ -13,7 +13,7 @@ import badgerSocialsPic from "../images/badgersocialsthumbnail.jpg";
 export const projects = [
   {
     id: 1,
-    title: "Badger Social",
+    title: "BadgerSocial",
     description:
       "Badger Social is a professional networking site meant for real world connections",
     thumbnail: badgerSocialsPic,
@@ -154,23 +154,5 @@ export const projects = [
     repo: "https://github.com/chrischarlesgibson/angular-portfolio",
     appUrl: "https://chrischarlesgibson.github.io/angular-portfolio/",
     tech: ["Angular", "InquiAngular-Material", "TypeScript", "HTML", "CSS"],
-  },
-  {
-    id: 10,
-    title: "Social Media API",
-    description:
-      "The purpose of this project was to create the backend API of a future social media site. ",
-    thumbnail: socialMediaPic,
-    repo: "https://github.com/chrischarlesgibson/social-network-API",
-    appUrl: "https://youtu.be/_zijhVlMA2o",
-    tech: [
-      "Express",
-      "Mongoose",
-      "Insomnia",
-      "MongoDB",
-      "Day.js",
-      "MongoDB Compass",
-      "Javascript",
-    ],
   },
 ];
